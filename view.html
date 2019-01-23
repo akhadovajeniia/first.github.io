@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akhadova</title>
+    <style>
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+#pagewrap {
+   width: 980px;
+   margin: 0 auto;
+}
+#header {
+   height: 460px;
+}
+#content {
+   width: 600px;
+   float: left;
+}
+#sidebar {
+   width: 280px;
+   float: right;
+}
+#footer {
+   clear: both;
+}
+@media screen and (max-width: 980px) {
+    
+    html body {background: yellowgreen;}
+   #pagewrap {
+      width: 95%;
+   }
+   #site-logo{
+
+       font-family: Snell Roundhand, cursive;
+   }
+   #content {
+      width: 60%;
+      padding: 3% 4%;
+   }
+   #sidebar {
+      width: 30%;
+   }
+   #sidebar .widget {
+      padding: 8% 7%;
+      margin-bottom: 10px;
+   }
+}
+@media screen and (max-width: 650px) {
+    html body {background: blueviolet;}
+   #header {
+      height: auto;
+   }
+ 
+   #main-nav {
+
+      position: static;
+   }
+   #site-logo {
+       font-family: Brush Script MT, Brush Script Std, cursive;
+      margin: 15px 100px 5px 0;
+      position: static;
+   }
+   #site-description {
+      margin: 0 0 15px;
+      position: static;
+   }
+   #content {
+      width: auto;
+      float: none;
+      margin: 20px 0;
+   }
+   #sidebar {
+      width: 100%;
+      float: none;
+      margin: 0;
+   }
+}
+@media screen and (max-width: 480px) {
+   html body{
+    background: blue;}
+   html {
+      -webkit-text-size-adjust: none;
+   }
+   #main-nav a {
+      font-size: 90%;
+      padding: 10px 8px;
+   }
+}
+img {
+   max-width: 100%;
+   height: 120px;
+   width: 120px;
+}
+    </style>
+</head>
+<body>
+<div id="pagewrap">
+    <header id="header">
+       <hgroup>
+          <h1 id="site-logo">First try</h1>
+          <h2 id="site-description">Akhadova Zheniia</h2>
+       </hgroup>
+       <div> <img class="kards" alt="photo" src="https://i08.fotocdn.net/s17/250/gallery_xs/474/114153977.jpg"></div>
+       <nav>
+          <ul id="main-nav">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Home1</a></li>
+             <li><a href="#">Home2</a></li>
+             <li><a href="#">Home3</a></li>
+          </ul>
+       </nav>
+    
+    </header>
+    <div id="content">
+       <article class="post">
+          something1
+       </article>
+    </div>
+    <aside id="sidebar">
+       <section class="widget">
+           something2
+       </section>              
+    </aside>
+    <footer id="footer">
+       something3
+    </footer>
+ </div>
+</body>
+</html>
